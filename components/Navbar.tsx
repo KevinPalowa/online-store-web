@@ -19,7 +19,7 @@ export default function Navbar() {
   const [isActive, setIsActive] = useState(false);
   return (
     <>
-      <div className="w-full flex bg-sky-100 text-xs space-x-2 items-center px-5 xl:px-12 py-2 text-gray-900">
+      <div className="w-full flex bg-sky-100 text-xs space-x-2 items-center justify-center sm:justify-start px-5 xl:px-12 py-2 text-gray-900">
         <Link
           href="https://wa.me/6282361558036"
           className="flex items-center"
