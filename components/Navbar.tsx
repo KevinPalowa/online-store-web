@@ -21,7 +21,7 @@ export default function Navbar() {
     <nav className="flex justify-between bg-gray-900 text-white w-screen">
       <div className="px-5 xl:px-12 py-6 flex w-full justify-between items-center">
         <Link className="text-3xl font-bold font-heading" href="/">
-          Logo Here.
+          Gardam OLShop
         </Link>
         <ul className="hidden md:flex px-4 font-semibold font-heading space-x-12">
           <NavLink href="#">Home</NavLink>
