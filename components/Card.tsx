@@ -9,7 +9,7 @@ type Props = {
 };
 export default function Card({ src, title, children, price }: Props) {
   return (
-    <div className="w-72 rounded-lg shadow-lg bg-white max-w-sm">
+    <div className="w-72 rounded-lg shadow-lg bg-white max-w-sm min-h-[300px]">
       {/* <Link href="#!"> */}
       <div className="relative w-full h-56">
         <Image className="rounded-t-lg" src={src} alt="Product Picture" fill />
