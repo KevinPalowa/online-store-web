@@ -20,9 +20,9 @@ export default function Navbar() {
   return (
     <nav className="flex justify-between bg-gray-900 text-white w-screen">
       <div className="px-5 xl:px-12 py-6 flex w-full justify-between items-center">
-        <a className="text-3xl font-bold font-heading" href="#">
+        <Link className="text-3xl font-bold font-heading" href="/">
           Logo Here.
-        </a>
+        </Link>
         <ul className="hidden md:flex px-4 font-semibold font-heading space-x-12">
           <NavLink href="#">Home</NavLink>
           <NavLink href="#">Category</NavLink>
@@ -42,9 +42,9 @@ export default function Navbar() {
           stroke="currentColor"
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M4 6h16M4 12h16M4 18h16"
           />
         </svg>

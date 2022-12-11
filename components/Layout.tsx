@@ -9,7 +9,7 @@ export default function Layout({ title, children }: Props) {
         <title>{title}</title>
       </Head>
       <Navbar />
-      <main> {children}</main>
+      <main className="min-h-screen"> {children}</main>
       <Footer />
     </>
   );
