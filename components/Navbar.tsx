@@ -18,16 +18,16 @@ function NavLink({ href, children }: Props) {
 export default function Navbar() {
   const [isActive, setIsActive] = useState(false);
   return (
-    <nav className="flex justify-between bg-gray-900 text-white w-screen">
+    <nav className="flex justify-between bg-gray-900 text-white">
       <div className="px-5 xl:px-12 py-6 flex w-full justify-between items-center">
         <Link className="text-3xl font-bold font-heading" href="/">
           Gardam OLShop
         </Link>
         <ul className="hidden md:flex px-4 font-semibold font-heading space-x-12">
           <NavLink href="#">Home</NavLink>
-          <NavLink href="#">Category</NavLink>
-          <NavLink href="#">Collections</NavLink>
-          <NavLink href="#">Contact Us</NavLink>
+          {/* <NavLink href="#">Collections</NavLink> */}
+          {/* <NavLink href="#">Category</NavLink> */}
+          <NavLink href="/contact">Contact Us</NavLink>
         </ul>
       </div>
       <button
@@ -52,9 +52,9 @@ export default function Navbar() {
       {isActive ? (
         <div className="bg-gray-900 flex flex-col p-3 w-full fixed rounded-md top-16 space-y-2 transition ease-in-out delay-150">
           <NavLink href="#">Home</NavLink>
-          <NavLink href="#">Category</NavLink>
-          <NavLink href="#">Collections</NavLink>
-          <NavLink href="#">Contact Us</NavLink>
+          {/* <NavLink href="#">Category</NavLink> */}
+          {/* <NavLink href="#">Collections</NavLink> */}
+          <NavLink href="/contact">Contact Us</NavLink>
         </div>
       ) : (
         ""

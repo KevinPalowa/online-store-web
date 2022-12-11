@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Layout title="Home Page">
       <Jumbotron />
-      <div className="grid grid-cols-1 gap-10 sm:grid-cols-4 container mx-auto my-5">
+      <div className="grid grid-cols-1 gap-10 sm:grid-cols-4 container place-items-center my-5 mx-auto">
         <Card src={pic1} title="Daster Merah" price="25000">
           Daster berbahan katun yang adem
         </Card>
