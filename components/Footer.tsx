@@ -64,7 +64,8 @@ export default function Footer() {
         </div>
       </div>
       <footer className="bg-gray-900 text-gray-400 p-5 sm:p-10 text-center">
-        Copyright © {new Date().getFullYear()}
+        Copyright © {new Date().getFullYear()} Distributor layanan
+        makanan/cemilan medan, | pakaian wanita | rempah karo | skincare{" "}
       </footer>
     </>
   );

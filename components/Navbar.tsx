@@ -17,6 +17,11 @@ function NavLink({ href, children }: Props) {
 }
 export default function Navbar() {
   const [isActive, setIsActive] = useState(false);
+  const nav = [
+    { name: "Home", url: "/" },
+    { name: "Category", url: "/category" },
+    { name: "Gallery", url: "/gallery" },
+  ];
   return (
     <>
       <div className="w-full flex bg-sky-100 text-xs space-x-2 items-center justify-center sm:justify-start px-5 xl:px-12 py-2 text-gray-900">
@@ -78,15 +83,16 @@ export default function Navbar() {
             Gardam OLShop
           </Link>
           <ul className="hidden md:flex px-4 font-semibold font-heading space-x-12">
-            <NavLink href="#">Home</NavLink>
-            {/* <NavLink href="#">Collections</NavLink> */}
-            {/* <NavLink href="#">Category</NavLink> */}
-            {/* <NavLink href="/contact">Contact Us</NavLink> */}
+            {nav.map((value, i) => (
+              <NavLink key={i} href={value.url}>
+                {value.name}
+              </NavLink>
+            ))}
           </ul>
         </div>
         <button
           onClick={() => setIsActive(!isActive)}
-          className="navbar-burger self-center mr-12 xl:hidden"
+          className="self-center mr-12 xl:hidden mb-5"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -104,11 +110,12 @@ export default function Navbar() {
           </svg>
         </button>
         {isActive ? (
-          <div className="bg-gray-900 flex flex-col p-3 w-full fixed rounded-md top-16 space-y-2 transition ease-in-out delay-150">
-            <NavLink href="#">Home</NavLink>
-            {/* <NavLink href="#">Category</NavLink> */}
-            {/* <NavLink href="#">Collections</NavLink> */}
-            {/* <NavLink href="/contact">Contact Us</NavLink> */}
+          <div className="bg-gray-900 flex flex-col p-3 w-full absolute rounded-md top-28 space-y-2">
+            {nav.map((value, i) => (
+              <NavLink key={i} href={value.url}>
+                {value.name}
+              </NavLink>
+            ))}
           </div>
         ) : (
           ""

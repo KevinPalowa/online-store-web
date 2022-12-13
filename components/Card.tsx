@@ -12,7 +12,12 @@ export default function Card({ src, title, children, price }: Props) {
     <div className="w-72 rounded-lg shadow-lg bg-white max-w-sm min-h-[300px]">
       {/* <Link href="#!"> */}
       <div className="relative w-full h-56">
-        <Image className="rounded-t-lg" src={src} alt="Product Picture" fill />
+        <Image
+          className="rounded-t-lg object-cover"
+          src={src}
+          alt="Product Picture"
+          fill
+        />
       </div>
       {/* </Link> */}
       <div className="p-6">
@@ -20,7 +25,7 @@ export default function Card({ src, title, children, price }: Props) {
         <p className="text-gray-700 text-base mb-4">{children}</p>
         <p className="text-gray-700 text-base mb-4 font-bold">Rp. {price}</p>
         <Link
-          className=" inline-block px-6 py-2.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+          className="w-full sm:w-fit text-center inline-block px-6 py-2.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
           href={`https://wa.me/6282361558036?text=Saya+mau+pesan+${title} Rp. ${price}`}
           target="_blank"
         >
