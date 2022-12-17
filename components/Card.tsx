@@ -4,7 +4,7 @@ import Link from "next/link";
 type Props = {
   src: string | StaticImageData;
   title: string;
-  children: string;
+  children?: string;
   price: string;
 };
 export default function Card({ src, title, children, price }: Props) {

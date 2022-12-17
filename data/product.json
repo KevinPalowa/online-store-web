@@ -1,1 +1,111 @@
-[{"id":"vVfG-fryMrhB-9oT","title":"Test 123","description":"asdad","price":"12000","image":"vVfG-fryMrhB-9oT.jpeg"},{"id":"RkSZNak7bVlB92x9","title":"Test 123","description":"asdad","price":"12000","image":"RkSZNak7bVlB92x9.jpeg"}]
+[
+  {
+    "title": "Ikan Kepala Batu",
+    "description": "asdad",
+    "price": "95000/kg",
+    "image": "product1.jpeg"
+  },
+  {
+    "title": "Kepa Nangka",
+    "description": "asdad",
+    "price": "95000/kg",
+    "image": "product2.jpeg"
+  },
+  {
+    "title": "Dencis Rebus",
+    "description": "asdad",
+    "price": "95000/kg",
+    "image": "product3.jpeg"
+  },
+  {
+    "title": "Pari",
+    "description": "asdad",
+    "price": "70000/ 1/4kg",
+    "image": "product4.jpeg"
+  },
+  {
+    "title": "Cumi",
+    "description": "asdad",
+    "price": "220000/kg",
+    "image": "product5.jpeg"
+  },
+  {
+    "title": "Ikan Kepala Batu Belah",
+    "description": "asdad",
+    "price": "95000/kg",
+    "image": "product6.jpeg"
+  },
+  {
+    "title": "Tauco",
+    "description": "asdad",
+    "price": "18000/btl",
+    "image": "product7.jpeg"
+  },
+  {
+    "title": "Tri Belah",
+    "description": "asdad",
+    "price": "130000/kg",
+    "image": "product8.jpeg"
+  },
+  {
+    "title": "Jambal",
+    "description": "asdad",
+    "price": "95000/kg",
+    "image": "product9.jpeg"
+  },
+  {
+    "title": "Rendang Daging",
+    "description": "asdad",
+    "price": "350000/kg",
+    "image": "product10.jpeg"
+  },
+  {
+    "title": "Belacan",
+    "description": "asdad",
+    "price": "15000/bgks",
+    "image": "product11.jpeg"
+  },
+  {
+    "title": "Dendeng Batokok",
+    "description": "asdad",
+    "price": "330000/kg",
+    "image": "product12.jpeg"
+  },
+  {
+    "title": "Sambal Tri Kacang",
+    "description": "asdad",
+    "price": "240000/kg",
+    "image": "product13.jpeg"
+  },
+  {
+    "title": "Rendang Kerang",
+    "description": "asdad",
+    "price": "200000/kg",
+    "image": "product14.jpeg"
+  },
+  {
+    "title": "Udang Tanpa Kepala",
+    "description": "asdad",
+    "price": "95000/kg",
+    "image": "product15.jpeg"
+  },
+  {
+    "title": "Tri Tawar",
+    "description": "asdad",
+    "price": "120000/kg",
+    "image": "product16.jpeg"
+  },
+
+  {
+    "title": "Sambal Tri Non Kacang",
+    "description": "asdad",
+    "price": "240000/kg",
+    "image": "product17.jpeg"
+  },
+  {
+    "title": "Test 123",
+    "description": "asdad",
+    "price": "12000",
+    "image": "product18.jpeg"
+  }
+]

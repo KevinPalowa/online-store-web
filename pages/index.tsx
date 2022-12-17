@@ -1,27 +1,20 @@
 import Card from "../components/Card";
 import Jumbotron from "../components/Jumbotron";
 import Layout from "../components/Layout";
-import pic1 from "../assets/img/product-1.jpeg";
-import pic2 from "../assets/img/product-2.jpeg";
-import pic3 from "../assets/img/product-3.jpeg";
-import pic4 from "../assets/img/product-4.jpeg";
+import products from "../data/product.json";
 export default function Home() {
   return (
     <Layout title="Home Page">
       <Jumbotron />
       <div className="grid grid-cols-1 gap-10 sm:grid-cols-4 container place-items-center my-5 mx-auto">
-        <Card src={pic1} title="Daster Merah" price="25000">
-          Daster berbahan katun yang adem
-        </Card>
-        <Card src={pic2} title="Cemilan kriuk" price="15000">
-          Cemilan kriuk yang menggugah selera
-        </Card>
-        <Card src={pic3} title="Daster Murah" price="20000">
-          Daster Murah meriah
-        </Card>
-        <Card src={pic4} title="Daster Keren" price="30000">
-          Daster keren dan kece
-        </Card>
+        {products.map((product, i) => (
+          <Card
+            key={i}
+            src={`/img/${product.image}`}
+            title={product.title}
+            price={product.price}
+          />
+        ))}
       </div>
     </Layout>
   );
