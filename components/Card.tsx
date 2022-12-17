@@ -13,7 +13,7 @@ export default function Card({ src, title, children, price }: Props) {
       {/* <Link href="#!"> */}
       <div className="relative w-full h-56">
         <Image
-          className="rounded-t-lg object-cover"
+          className="rounded-t-lg object-cover w-full h-56"
           src={src}
           alt="Product Picture"
           fill

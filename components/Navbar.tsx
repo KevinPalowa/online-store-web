@@ -19,7 +19,7 @@ export default function Navbar() {
   const [isActive, setIsActive] = useState(false);
   const nav = [
     { name: "Home", url: "/" },
-    { name: "Category", url: "/category" },
+    /* { name: "Category", url: "/category" }, */
     { name: "Gallery", url: "/gallery" },
   ];
   return (
@@ -110,7 +110,7 @@ export default function Navbar() {
           </svg>
         </button>
         {isActive ? (
-          <div className="bg-gray-900 flex flex-col p-3 w-full absolute rounded-md top-28 space-y-2">
+          <div className="bg-gray-900 flex flex-col p-3 w-full absolute rounded-md top-28 space-y-2 z-[999]">
             {nav.map((value, i) => (
               <NavLink key={i} href={value.url}>
                 {value.name}
