@@ -107,5 +107,29 @@
     "description": "asdad",
     "price": "12000",
     "image": "product18.jpeg"
+  },
+  {
+    "title": "Kue Kipas",
+    "description": "asdad",
+    "price": "90000/kg",
+    "image": "product19.jpeg"
+  },
+  {
+    "title": "Medan Jaya",
+    "description": "asdad",
+    "price": "18000/5 bngks",
+    "image": "product20.jpeg"
+  },
+  {
+    "title": "Dodol sidempuan",
+    "description": "asdad",
+    "price": "80000/kg",
+    "image": "product21.jpeg"
+  },
+  {
+    "title": "Kue Jahe",
+    "description": "asdad",
+    "price": "25000/bngks",
+    "image": "product22.jpeg"
   }
 ]
